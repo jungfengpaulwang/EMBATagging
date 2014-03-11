@@ -1,0 +1,293 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{6BF636A8-8E57-4C74-AE5F-2C75B88DAA75}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Tagging</RootNamespace>
+    <AssemblyName>Tagging</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\FiscaRuntime\addmodules\MOD_EMBACore\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>
+    </DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Aspose.Cells, Version=4.4.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\ischool_Elementary\FiscaRuntime\addmodules\LIB_ASPOSE\Aspose.Cells.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevComponents.DotNetBar2, Version=9.5.0.1, Culture=neutral, PublicKeyToken=7eb7c3a35b91de04, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\ischool_Senior with FISCA\LibraryProject\DevComponents.DotNetBar2.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="FISCA">
+      <HintPath>..\..\ischool_EMBA\FiscaRuntime\kernel\FISCA.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="FISCA.Authentication">
+      <HintPath>..\..\FiscaRuntime\kernel\FISCA.Authentication.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="FISCA.DSAClient">
+      <HintPath>..\..\FiscaRuntime\kernel\FISCA.DSAClient.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="FISCA.LogAgent">
+      <HintPath>..\..\FiscaRuntime\kernel\FISCA.LogAgent.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="FISCA.Permission">
+      <HintPath>..\..\FiscaRuntime\kernel\FISCA.Permission.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="FISCA.Presentation, Version=1.1.0.8, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\FiscaRuntime\kernel\FISCA.Presentation.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="FISCA.UDT">
+      <HintPath>..\FiscaRuntime\kernel\FISCA.UDT.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="IntelliSchool.DSA.ClientFramework">
+      <HintPath>..\FiscaRuntime\modules\LIB_Legacy\IntelliSchool.DSA.ClientFramework.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="K12.Data">
+      <HintPath>..\..\ischool_EMBA\FiscaRuntime\modules\LIB_K12DAL\K12.Data.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="K12.Presentation">
+      <HintPath>..\FiscaRuntime\modules\LIB_Campus\K12.Presentation.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="SmartSchool.API.PlugIn">
+      <HintPath>..\FiscaRuntime\modules\LIB_Legacy\SmartSchool.API.PlugIn.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="SmartSchool.ErrorReporting">
+      <HintPath>..\FiscaRuntime\modules\LIB_Legacy\SmartSchool.ErrorReporting.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CacheManager.cs" />
+    <Compile Include="ImportExport\Export\ClassTag\ExportClassTag.cs" />
+    <Compile Include="ImportExport\Export\ClassTag\ClassTagEntity.cs" />
+    <Compile Include="ImportExport\Export\CourseTag\CourseTagEntity.cs" />
+    <Compile Include="ImportExport\Export\CourseTag\ExportCourseTag.cs" />
+    <Compile Include="ImportExport\Export\ExportCourseV2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ImportExport\Export\ExportCourseV2.designer.cs">
+      <DependentUpon>ExportCourseV2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ImportExport\Export\ExportClassV2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ImportExport\Export\ExportClassV2.designer.cs">
+      <DependentUpon>ExportClassV2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ImportExport\Export\ExportStudentV2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ImportExport\Export\ExportStudentV2.designer.cs">
+      <DependentUpon>ExportStudentV2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ImportExport\Export\ExportTeacherV2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ImportExport\Export\ExportTeacherV2.designer.cs">
+      <DependentUpon>ExportTeacherV2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ImportExport\Import\ClassTag\DAClassTransfer.cs" />
+    <Compile Include="ImportExport\Import\ClassTag\ImportClassTag.cs" />
+    <Compile Include="ImportExport\Import\CourseTag\DACourseTransfer.cs" />
+    <Compile Include="ImportExport\Import\ImportCourseV2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ImportExport\Import\ImportCourseV2.designer.cs">
+      <DependentUpon>ImportCourseV2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ImportExport\Import\CourseTag\ImportCourseTag.cs" />
+    <Compile Include="ImportExport\Import\ImportClassV2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ImportExport\Import\ImportClassV2.designer.cs">
+      <DependentUpon>ImportClassV2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ImportExport\Import\StudentTag\PermRecLogProcess.cs" />
+    <Compile Include="ImportExport\Export\StudentTag\ExportStudentTag.cs" />
+    <Compile Include="ImportExport\Import\StudentTag\DALStudentTransfer.cs" />
+    <Compile Include="ImportExport\Export\StudentTag\StudentTagEntity.cs" />
+    <Compile Include="ImportExport\Import\TeacherTag\DATeacherTransfer.cs" />
+    <Compile Include="ImportExport\Export\TeacherTag\ExportTeacherTag.cs" />
+    <Compile Include="ImportExport\Export\TeacherTag\TeacherTagEntity.cs" />
+    <Compile Include="ImportExport\Import\StudentTag\ImportStudentTag.cs" />
+    <Compile Include="ImportExport\Import\ImportStudentV2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ImportExport\Import\ImportStudentV2.designer.cs">
+      <DependentUpon>ImportStudentV2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ImportExport\Import\ImportTeacherV2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ImportExport\Import\ImportTeacherV2.designer.cs">
+      <DependentUpon>ImportTeacherV2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ImportExport\Import\TeacherTag\ImportTeacherTag.cs" />
+    <Compile Include="Permissions.cs" />
+    <Compile Include="TagCache.cs" />
+    <Compile Include="ClassDescriptionPanelBuilder.cs" />
+    <Compile Include="EntityTagRecordCache.cs" />
+    <Compile Include="TaggingView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TaggingView.designer.cs">
+      <DependentUpon>TaggingView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NavViewNode.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="StudentDescriptionPanelBuilder.cs" />
+    <Compile Include="TaggingBar.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TaggingBar.Designer.cs">
+      <DependentUpon>TaggingBar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TaggingMenu.cs" />
+    <Compile Include="TagConfigRecordCache.cs" />
+    <Compile Include="_TagForm\PResource.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PResource.resx</DependentUpon>
+    </Compile>
+    <Compile Include="_TagForm\TagColor.cs" />
+    <Compile Include="_TagForm\TagEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="_TagForm\TagEditor.designer.cs">
+      <DependentUpon>TagEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="_TagForm\TagForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="_TagForm\TagForm.designer.cs">
+      <DependentUpon>TagForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TeacherDescriptionPanelBuilder.cs" />
+    <Compile Include="CourseDescriptionPanelBuilder.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ImportExport\Export\ExportCourseV2.resx">
+      <DependentUpon>ExportCourseV2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ImportExport\Export\ExportClassV2.resx">
+      <DependentUpon>ExportClassV2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ImportExport\Export\ExportStudentV2.resx">
+      <DependentUpon>ExportStudentV2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ImportExport\Export\ExportTeacherV2.resx">
+      <DependentUpon>ExportTeacherV2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ImportExport\Import\ImportCourseV2.resx">
+      <DependentUpon>ImportCourseV2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ImportExport\Import\ImportClassV2.resx">
+      <DependentUpon>ImportClassV2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ImportExport\Import\ImportStudentV2.resx">
+      <DependentUpon>ImportStudentV2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ImportExport\Import\ImportTeacherV2.resx">
+      <DependentUpon>ImportTeacherV2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TaggingView.resx">
+      <DependentUpon>TaggingView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TaggingBar.resx">
+      <DependentUpon>TaggingBar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_TagForm\PResource.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>PResource.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_TagForm\TagEditor.resx">
+      <DependentUpon>TagEditor.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="_TagForm\TagForm.resx">
+      <DependentUpon>TagForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Import.Image.png" />
+    <None Include="Resources\Export.Image.png" />
+    <Content Include="_TagForm\Resources\Checked.png" />
+    <Content Include="_TagForm\Resources\ctxTag.Image.png" />
+    <Content Include="_TagForm\Resources\Indeterminate.png" />
+    <Content Include="_TagForm\Resources\Unchecked.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Customization.Tagging\Customization.Tagging.csproj">
+      <Project>{026C1405-1AE8-4A8F-ABAC-394899EDD2E0}</Project>
+      <Name>Customization.Tagging</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

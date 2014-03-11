@@ -1,0 +1,46 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tagging", "Tagging.csproj", "{6BF636A8-8E57-4C74-AE5F-2C75B88DAA75}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Customization.Tagging", "Customization.Tagging\Customization.Tagging.csproj", "{026C1405-1AE8-4A8F-ABAC-394899EDD2E0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestTagging", "TestTagging\TestTagging.csproj", "{1F9AEA55-8108-4911-A5BB-A26444AB63E6}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 4
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://tfserver.ischool.com.tw:8080/tfs/tfs2008
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = Tagging.csproj
+		SccLocalPath1 = .
+		SccProjectUniqueName2 = Customization.Tagging\\Customization.Tagging.csproj
+		SccProjectName2 = Customization.Tagging
+		SccLocalPath2 = Customization.Tagging
+		SccProjectUniqueName3 = TestTagging\\TestTagging.csproj
+		SccProjectName3 = TestTagging
+		SccLocalPath3 = TestTagging
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6BF636A8-8E57-4C74-AE5F-2C75B88DAA75}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6BF636A8-8E57-4C74-AE5F-2C75B88DAA75}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6BF636A8-8E57-4C74-AE5F-2C75B88DAA75}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6BF636A8-8E57-4C74-AE5F-2C75B88DAA75}.Release|Any CPU.Build.0 = Release|Any CPU
+		{026C1405-1AE8-4A8F-ABAC-394899EDD2E0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{026C1405-1AE8-4A8F-ABAC-394899EDD2E0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{026C1405-1AE8-4A8F-ABAC-394899EDD2E0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{026C1405-1AE8-4A8F-ABAC-394899EDD2E0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1F9AEA55-8108-4911-A5BB-A26444AB63E6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1F9AEA55-8108-4911-A5BB-A26444AB63E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1F9AEA55-8108-4911-A5BB-A26444AB63E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1F9AEA55-8108-4911-A5BB-A26444AB63E6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
